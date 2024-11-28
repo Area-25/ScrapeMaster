@@ -97,7 +97,7 @@ Save ChatGPT's response directly as `topics.md` and you're ready to go!
 ## **Installation**
 Clone this repo and install dependencies:
 ```bash
-git clone https://github.com/Feel-The-AGI/ScrapeMaster.git
+git clone https://github.com/Area-25/ScrapeMaster.git
 cd ScrapeMaster
 pip install -r requirements.txt
 ```
