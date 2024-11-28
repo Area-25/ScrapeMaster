@@ -1,15 +1,15 @@
-# **ScrapeMaster**
+# **WebRover**
 
 ---
 
-# ScrapeMaster 🚀  
+# WebRover 🚀  
 **Scrape entire websites, create LLM-ready datasets, and dominate the web.**  
 We keep it raw and real—no API credits, just clever automation. 🤖  
 
 ---
 
-## **What is ScrapeMaster?**
-ScrapeMaster is your ultimate dataset generator:  
+## **What is WebRover?**
+WebRover is your ultimate dataset generator:  
 1. **Turn ideas into websites** with automated Google searches.  
 2. Scrape and structure multi-layered websites into **LLM-ready JSONL files**.  
 3. Keep things fun and transparent—no OpenAI or Google API keys needed.  
@@ -25,7 +25,7 @@ Built in **< 4 hours**, because that's the rule in **Area 25**. If it's not done
      - Direct input: comma-separated list of topics
      - File input: .json, .yaml, .txt, or .md file containing topics
 
-2. ScrapeMaster will:
+2. WebRover will:
    - Load your topics (from input or file)
    - Automate Google searches for those topics to find URLs
    - Scrape the websites, clean the data, and output **LLM-ready JSONL files**
@@ -37,7 +37,7 @@ Built in **< 4 hours**, because that's the rule in **Area 25**. If it's not done
 ### **1. Direct Input**
 Use comma-separated topics directly in the command:
 ```bash
-python scraper.py --websites 100 --topics "AI basics, machine learning, deep learning"
+python rover.py --websites 100 --topics "AI basics, machine learning, deep learning"
 ```
 
 ### **2. File Input**
@@ -78,7 +78,7 @@ deep learning
 
 Then run:
 ```bash
-python scraper.py --websites 100 --topics topics.json
+python rover.py --websites 100 --topics topics.json
 # or .yaml, .txt, .md
 ```
 
@@ -88,7 +88,7 @@ python scraper.py --websites 100 --topics topics.json
 We've got you covered! Use **ChatGPT** to brainstorm topics for your niche.  
 Here's a **prompt template** to make it effortless:
 
-> _"I am using a tool called ScrapeMaster to scrape websites for training an AI model. My main topic is [your niche]. Can you provide me a list of at least 30 detailed subtopics under this niche? Format the output as a markdown list with each topic on a new line starting with '-'. For example, if the niche is 'AI research,' include subtopics like 'deep learning for healthcare,' 'transformer architectures,' etc."_
+> _"I am using a tool called WebRover to scrape websites for training an AI model. My main topic is [your niche]. Can you provide me a list of at least 30 detailed subtopics under this niche? Format the output as a markdown list with each topic on a new line starting with '-'. For example, if the niche is 'AI research,' include subtopics like 'deep learning for healthcare,' 'transformer architectures,' etc."_
 
 Save ChatGPT's response directly as `topics.md` and you're ready to go!
 
@@ -97,15 +97,15 @@ Save ChatGPT's response directly as `topics.md` and you're ready to go!
 ## **Installation**
 Clone this repo and install dependencies:
 ```bash
-git clone https://github.com/Area-25/ScrapeMaster.git
-cd ScrapeMaster
+git clone https://github.com/Area-25/WebRover.git
+cd WebRover
 pip install -r requirements.txt
 ```
 
 ---
 
 ## **Outputs**
-- **`websites_master.json`**: Full list of URLs ScrapeMaster will process
+- **`websites_master.json`**: Full list of URLs WebRover will process
 - **`websites_completed.json`**: Successfully scraped and processed sites
 - **`websites_errors.json`**: Failed sites (for retry)
 - **`final_dataset/dataset.jsonl`**: Your final, LLM-ready dataset
